@@ -15,20 +15,20 @@ import com.devsuperior.dscatalog.services.CategoryService;
 @RestController
 @RequestMapping(value = "/categories")
 public class CategoryResource {
-	
-	@Autowired
-	private CategoryService service;
-	
-	@GetMapping
-	public ResponseEntity<List<CategoryDTO>> findAll(){
-		List<CategoryDTO> list = service.findAll();
-		return ResponseEntity.ok().body(list);
-	}
-	
-	@GetMapping(value = "/{id}")
-	public ResponseEntity<CategoryDTO> findById(@PathVariable Long id){
-		CategoryDTO dto = service.findById(id);
-		return ResponseEntity.ok().body(dto);
-	}
-	
+
+    @Autowired
+    private CategoryService service;
+
+    @GetMapping
+    public ResponseEntity<List<CategoryDTO>> findAll() {
+        List<CategoryDTO> list = service.findAll();
+        return ResponseEntity.ok().body(list);
+    }
+
+    @GetMapping(value = "/{id}")
+    public ResponseEntity<CategoryDTO> findById(@PathVariable Long id) {
+        CategoryDTO dto = service.findById(id);
+        return ResponseEntity.ok().body(dto);
+    }
+
 }
