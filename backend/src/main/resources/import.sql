@@ -1,1 +1,1 @@
-INSERT INTO tb_category (name) VALUES ('Books'), ('Electronics'), ('Computers');
+INSERT INTO tb_category (name, created_At) VALUES ('Books', now()), ('Electronics', now()), ('Computers', now());
