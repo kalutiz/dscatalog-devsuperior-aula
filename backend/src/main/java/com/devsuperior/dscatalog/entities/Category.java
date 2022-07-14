@@ -54,12 +54,12 @@ public class Category implements Serializable {
     }
 
     @PrePersist
-    public void prePersist(){
+    public void prePersist() {
         createdAt = Instant.now();
     }
 
     @PreUpdate
-    public void preUpdate(){
+    public void preUpdate() {
         updateAt = Instant.now();
     }
 
@@ -76,5 +76,4 @@ public class Category implements Serializable {
         Category other = (Category) obj;
         return Objects.equals(id, other.id);
     }
-
 }
