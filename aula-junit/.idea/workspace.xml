@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48bc7bd7-5593-4953-bbfc-b3708d6f5b35" name="Changes" comment="Delete aula-junit/.idea directory">
-      <change afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tests/entities/AccountTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tests/entities/AccountTests.class" afterDir="false" />
-    </list>
+    <list default="true" id="48bc7bd7-5593-4953-bbfc-b3708d6f5b35" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1657830889178</updated>
-      <workItem from="1657830890642" duration="1132000" />
+      <workItem from="1657830890642" duration="1280000" />
     </task>
     <task id="LOCAL-00001" summary="atualização">
       <created>1657831414007</created>
