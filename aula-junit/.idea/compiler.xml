@@ -9,8 +9,5 @@
         <module name="aula-junit" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="aula-junit" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>
