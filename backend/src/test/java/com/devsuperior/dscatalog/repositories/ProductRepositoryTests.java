@@ -1,6 +1,7 @@
 package com.devsuperior.dscatalog.repositories;
 
 import com.devsuperior.dscatalog.entities.Product;
+import com.devsuperior.dscatalog.services.exceptions.ResourceNotFoundException;
 import com.devsuperior.dscatalog.tests.Factory;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -48,5 +49,17 @@ public class ProductRepositoryTests {
         Assertions.assertThrows(EmptyResultDataAccessException.class, () -> {
             repository.deleteById(nonExistingId);
         });
+    }
+
+    @Test
+    public void findByIdShouldReturnOptionalProductNotEmptyWhenIdExist() {
+        Optional<Product> result = repository.findById(existingId);
+        Assertions.assertFalse(result.isEmpty());
+    }
+
+    @Test
+    public void findByIdShouldReturnOptionalProductEmptyWhenIdDoesNotExist() {
+        Optional<Product> result = repository.findById(nonExistingId);
+        Assertions.assertTrue(result.isEmpty());
     }
 }
