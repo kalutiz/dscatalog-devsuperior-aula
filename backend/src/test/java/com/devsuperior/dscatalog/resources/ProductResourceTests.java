@@ -65,6 +65,12 @@ public class ProductResourceTests {
     }
 
     @Test
+    public void deleteShouldReturnBadRequestWhenDependentId() throws Exception {
+        ResultActions result = mockMvc.perform(delete("/products/{id}", dependentId).accept(MediaType.APPLICATION_JSON));
+        result.andExpect(status().isBadRequest());
+    }
+
+    @Test
     public void deleteShouldReturnNoContentWhenIdExists() throws Exception {
         ResultActions result = mockMvc.perform(delete("/products/{id}", existingId).accept(MediaType.APPLICATION_JSON));
         result.andExpect(status().isNoContent());
